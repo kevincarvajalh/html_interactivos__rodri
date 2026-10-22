@@ -1,0 +1,59 @@
+/* Réplica de MetaTrader 5 para computador (tema claro de Windows) */
+.pc-cont{position:relative;width:100%;border-radius:10px;overflow:hidden;border:1px solid #cfd5db;box-shadow:0 8px 30px rgba(16,24,40,.1);background:#fff}
+.pc{--bd:#a0a0a0;--gr:#f0f0f0;--az:#2c6fb7;--rj:#b8403f;position:relative;width:700px;height:520px;display:flex;flex-direction:column;background:var(--gr);color:#111;font-family:"Segoe UI",Roboto,Arial,sans-serif;font-size:12px;line-height:1.3;user-select:none}
+.pc *{box-sizing:border-box;color:inherit}
+.pc button{font:inherit;cursor:pointer}
+.pc-titulo{height:26px;background:#fff;border-bottom:1px solid #d9d9d9;display:flex;align-items:center;padding:0 10px;font-size:12px;gap:8px;flex:none}
+.pc-titulo i{width:12px;height:12px;border-radius:3px;background:#2c6fb7;display:block}
+.pc-menu{height:24px;background:#fff;display:flex;gap:2px;padding:0 4px;align-items:center;border-bottom:1px solid #d9d9d9;flex:none}
+.pc-menu span{padding:2px 8px;border-radius:3px}
+.pc-barra{height:36px;background:var(--gr);display:flex;align-items:center;gap:4px;padding:0 6px;border-bottom:1px solid #cfcfcf;flex:none}
+.pc-btn{height:26px;padding:0 10px;border:1px solid transparent;background:transparent;border-radius:3px;display:flex;align-items:center;gap:6px;white-space:nowrap}
+.pc-btn:hover{border-color:#8fb2d8;background:#e5f0fb}
+.pc-btn.fuerte{background:#e9f2fb;border-color:#8fb2d8;font-weight:600}
+.pc-sep{width:1px;height:20px;background:#c4c4c4;margin:0 4px}
+.pc-tf{display:flex;gap:1px}
+.pc-tf span{padding:3px 6px;border-radius:3px;font-size:11px}
+.pc-tf span.on{background:#cfe3f7}
+.pc-medio{display:flex;flex:1;min-height:0;border-bottom:1px solid #b5b5b5}
+.pc-obs{width:200px;flex:none;display:flex;flex-direction:column;background:#fff;border-right:1px solid #b5b5b5}
+.pc-cab{height:22px;background:#e6e6e6;border-bottom:1px solid #c9c9c9;padding:3px 8px;font-weight:600;flex:none}
+.pc-tabla{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+.pc-tabla th{background:#f3f3f3;text-align:left;font-weight:600;padding:3px 6px;border-bottom:1px solid #d4d4d4;border-right:1px solid #e1e1e1;white-space:nowrap}
+.pc-tabla td{padding:4px 6px;border-bottom:1px solid #eee;white-space:nowrap}
+.pc-tabla tr.sel td{background:#cfe3f7}
+.pc-tabla .az{color:var(--az)}.pc-tabla .rj{color:var(--rj)}
+.pc-tabla tr.fila{cursor:pointer}
+.pc-grafico{flex:1;background:#fff;position:relative;min-width:0}
+.pc-grafico svg{width:100%;height:100%;display:block}
+.pc-grafico .tit{position:absolute;left:8px;top:6px;color:#333;font-size:12px}
+.pc-term{height:186px;flex:none;display:flex;flex-direction:column;background:#fff;position:relative}
+.pc-tabs{display:flex;background:var(--gr);border-bottom:1px solid #c9c9c9;flex:none}
+.pc-tabs button{border:0;background:transparent;padding:4px 14px;border-right:1px solid #d0d0d0}
+.pc-tabs button.on{background:#fff;font-weight:600;box-shadow:inset 0 2px 0 #2c6fb7}
+.pc-scroll{flex:1;overflow:auto;min-height:0}
+.pc-saldo{background:#f3f3f3;border-top:1px solid #d4d4d4;padding:4px 8px;display:flex;flex-wrap:wrap;gap:2px 14px;font-weight:600;flex:none;font-variant-numeric:tabular-nums}
+.pc-x{border:0;background:none;width:20px;height:20px;border-radius:3px;font-size:13px;line-height:1}
+.pc-x:hover{background:#e5c9c9}
+.pc-pie{height:22px;background:#e6e6e6;border-top:1px solid #c0c0c0;display:flex;align-items:center;padding:0 10px;font-size:11px;color:#555;flex:none;justify-content:space-between}
+.pc-menuctx{position:absolute;left:70px;top:100%;z-index:20;background:#fff;border:1px solid #888;box-shadow:2px 3px 8px rgba(0,0,0,.35);min-width:210px}
+.pc-menuctx button{display:block;width:100%;text-align:left;border:0;background:#fff;padding:6px 14px}
+.pc-menuctx button:hover{background:#cfe3f7}
+.pc-fondo{position:absolute;inset:0;background:rgba(0,0,0,.25);z-index:15;display:grid;place-items:center}
+.pc-dialogo{width:420px;background:#f0f0f0;border:1px solid #777;box-shadow:0 8px 30px rgba(0,0,0,.45)}
+.pc-dialogo .t{background:#fff;padding:6px 10px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #ccc;font-weight:600}
+.pc-dialogo .cu{padding:10px 14px;display:grid;grid-template-columns:110px 1fr;gap:8px 10px;align-items:center}
+.pc-dialogo input,.pc-dialogo select{height:26px;border:1px solid #8a8a8a;background:#fff;padding:0 6px;font:inherit;width:100%}
+.pc-vol{display:flex;gap:4px}
+.pc-vol button{width:26px;height:26px;border:1px solid #8a8a8a;background:#f7f7f7}
+.pc-precios{display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:6px 14px 10px}
+.pc-precios button{height:58px;border:0;color:#fff!important;font-weight:600;font-size:13px;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.pc-precios button b{font-size:19px;font-weight:500;color:#fff}
+.pc-precios .s{background:var(--rj)}.pc-precios .b{background:var(--az)}.pc-precios .o{background:var(--az);grid-column:1/-1}
+.pc-precios button *{color:#fff!important}
+.pc-aviso{margin:0 14px 8px;background:#fff;border:1px solid #ccc;padding:6px 8px}
+.pc-aviso.err{border-left:4px solid var(--rj)}
+.pc-ayuda{margin:0 14px 8px}
+.pc-ayuda button{border:1px solid #8a8a8a;background:#f7f7f7;padding:4px 10px}
+.pc .m5-foco{outline:3px solid #43B649;outline-offset:-2px;animation:m5pulso 1.3s ease-in-out infinite}
+.pc-vacio{padding:14px;color:#777}

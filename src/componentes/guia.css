@@ -1,0 +1,25 @@
+.gd{position:absolute;inset:0;z-index:30;pointer-events:auto;overflow:hidden}
+.gd-aro{position:absolute;border:3px solid #43B649;border-radius:10px;box-shadow:0 0 0 999px rgba(15,23,42,.42);transition:all .35s ease;pointer-events:none;animation:gdpulso 1.6s ease-in-out infinite}
+@keyframes gdpulso{50%{border-color:rgba(67,182,73,.55)}}
+.gd-num{position:absolute;left:-12px;top:-14px;width:24px;height:24px;border-radius:50%;background:#43B649;color:#0A0A0A;font:600 13px/24px "Barlow",Arial,sans-serif;text-align:center;border:2px solid #fff}
+.gd-flecha-caja{position:absolute;pointer-events:none;transition:left .35s ease,top .35s ease}
+.gd-flecha{display:block;filter:drop-shadow(0 2px 3px rgba(15,23,42,.35));animation:gdsube 1s ease-in-out infinite}
+.gd-flecha.abajo{transform:rotate(180deg);animation-name:gdbaja}
+@keyframes gdsube{50%{transform:translateY(7px)}}
+@keyframes gdbaja{0%,100%{transform:rotate(180deg) translateY(0)}50%{transform:rotate(180deg) translateY(7px)}}
+.gd-burbuja{background:#fff;color:#12161A;border:1px solid #dfe3e7;border-radius:18px;padding:14px 16px;display:flex;flex-direction:column;gap:10px;font-family:"Barlow",Arial,sans-serif}
+.gd-burbuja.flota{position:absolute;left:10px;right:10px;z-index:40;box-shadow:0 10px 30px rgba(16,24,40,.22)}
+.gd-burbuja.flota.a{top:10px}
+.gd-burbuja.flota.b{bottom:10px}
+.gd-burbuja p{color:#12161A;font-size:17px;font-weight:500;line-height:1.35;margin:0}
+.gd-cab{display:flex;align-items:center;gap:8px}
+.gd-badge{width:22px;height:22px;border-radius:50%;background:#43B649;color:#0A0A0A;font:600 12px/22px "Barlow",Arial,sans-serif;text-align:center;flex:none}
+.gd-burbuja .gd-paso{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#4b5560;flex:none}
+.gd-barra{flex:1;height:4px;border-radius:2px;background:#e6eaee;overflow:hidden}
+.gd-barra i{display:block;height:100%;background:#43B649;transition:width .3s}
+.gd-btns{display:flex;gap:8px}
+.gd-burbuja .gd-btns button{min-height:46px;border-radius:12px;border:0;font:inherit;font-weight:600;font-size:16px;cursor:pointer}
+.gd-burbuja .gd-pri{flex:1;background:linear-gradient(90deg,#43B649,#34A773);color:#0A0A0A}
+.gd-burbuja .gd-sec{background:#eef1f4;color:#12161A;padding:0 18px}
+.gd-burbuja .gd-saltar{background:none;border:0;color:#6b7681;font:inherit;font-size:13px;text-decoration:underline;cursor:pointer;align-self:center}
+@media (prefers-reduced-motion:reduce){.gd-flecha,.gd-aro{animation:none}}

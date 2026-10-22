@@ -1,0 +1,24 @@
+{
+  "name": "ruta-aha-7-dias",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 5174",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1 --port 5175"
+  },
+  "dependencies": {
+    "@fontsource/barlow": "^5.3.0",
+    "@fontsource/roboto": "^5.3.0",
+    "canvas-confetti": "^1.9.4",
+    "framer-motion": "^14.4.0",
+    "lucide-react": "^1.60.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.1.2",
+    "vite": "^8.3.4"
+  }
+}

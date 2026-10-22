@@ -1,0 +1,92 @@
+/* Réplica de la interfaz móvil de MetaTrader 5 (tema oscuro). Colores propios de MT5, no de la marca. */
+.m5-wrap{display:flex;flex-direction:column;gap:12px}
+.m5-guia{background:#43B649;border-radius:16px;padding:14px 16px;font-size:15px;font-weight:700;display:flex;gap:12px;align-items:flex-start}
+.m5-guia,.m5-guia *{color:#0A0A0A!important}
+.m5{--bg:#ffffff;--bg2:#f3f5f7;--bg3:#e7ebef;--ln:#e2e6ea;--tx:#15191d;--mut:#6b7681;--az:#1c6fd1;--rj:#d83a34;
+  position:relative;width:100%;max-width:400px;margin:0 auto;height:min(680px,78dvh);min-height:560px;display:flex;flex-direction:column;
+  background:var(--bg);color:var(--tx);border:6px solid #d3d9df;box-shadow:0 8px 30px rgba(16,24,40,.12);border-radius:34px;overflow:hidden;font-family:Roboto,"Segoe UI",Arial,sans-serif;font-size:14px;line-height:1.35}
+.m5 *{color:inherit;box-sizing:border-box}
+.m5 button{background:none;border:0;font:inherit}
+.m5-etq{align-self:center;background:#43B649;color:#0A0A0A;border-radius:999px;padding:4px 14px;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.m5-bar{display:flex;align-items:center;gap:12px;padding:12px 14px;background:var(--bg2);border-bottom:1px solid var(--ln);flex:none}
+.m5-bar h4{flex:1;font-size:17px;font-weight:500;line-height:1.1}
+.m5-bar small{display:block;font-size:11px;color:var(--mut);font-weight:400;margin-top:2px}
+.m5-ico{width:36px;height:36px;border-radius:50%;display:grid;place-items:center;color:var(--tx)}
+.m5-cuerpo{flex:1;overflow-y:auto;overflow-x:hidden;min-height:0}
+.m5-nav{display:flex;flex:none;background:var(--bg2);border-top:1px solid var(--ln)}
+.m5-nav button{flex:1;display:flex;flex-direction:column;align-items:center;gap:3px;padding:8px 2px 10px;font-size:10px;color:var(--mut)}
+.m5-nav button.on{color:var(--az)}
+/* cotizaciones */
+.m5-fila{display:flex;align-items:center;justify-content:space-between;gap:8px;width:100%;text-align:left;padding:10px 14px;border-bottom:1px solid var(--ln)}
+.m5-fila:active{background:var(--bg3)}
+.m5-sym b{font-size:16px;font-weight:700;display:block}
+.m5-sym small{font-size:11px;color:var(--mut)}
+.m5-px{display:flex;gap:14px;font-variant-numeric:tabular-nums;align-items:baseline}
+.m5-px .p{text-align:right;font-size:20px;line-height:1}
+.m5-px .p i{font-style:normal;font-size:11px;color:var(--mut);display:block;margin-top:3px}
+.m5-px .u{color:var(--az)}.m5-px .d{color:var(--rj)}
+.m5-px .g{font-size:27px;font-weight:500}.m5-px sup{font-size:12px;vertical-align:top;position:relative;top:-6px}
+.m5-px .c{font-size:20px}
+/* operaciones */
+.m5-res{padding:10px 14px;border-bottom:1px solid var(--ln)}
+.m5-res .gr{font-size:22px;font-weight:500;color:var(--az);margin-bottom:6px}
+.m5-res .gr.n{color:var(--rj)}
+.m5-kv{display:flex;justify-content:space-between;padding:3px 0;font-size:13px;color:var(--mut)}
+.m5-kv b{color:var(--tx);font-weight:500}
+.m5-sec{padding:8px 14px;background:var(--bg2);color:var(--mut);font-size:12px;letter-spacing:.04em;text-transform:uppercase;display:flex;justify-content:space-between}
+.m5-pos{display:block;width:100%;text-align:left;padding:10px 14px;border-bottom:1px solid var(--ln)}
+.m5-pos:active{background:var(--bg3)}
+.m5-pos .l1{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+.m5-pos .l1 b{font-size:15px;font-weight:700}
+.m5-pos .l1 b span{font-weight:400;margin-left:4px}
+.m5-pos .l1 b span.buy{color:var(--az)}.m5-pos .l1 b span.sell{color:var(--rj)}
+.m5-pos .l2{display:flex;justify-content:space-between;font-size:12px;color:var(--mut);margin-top:2px}
+.m5-pos .gan{font-size:16px;font-weight:500}
+.u{color:var(--az)}.d{color:var(--rj)}
+.m5-vacio{padding:40px 24px;text-align:center;color:var(--mut)}
+/* gráfico */
+.m5-tf{display:flex;gap:4px;padding:8px 10px;overflow-x:auto;scrollbar-width:none;background:var(--bg2)}
+.m5-tf::-webkit-scrollbar{display:none}
+.m5-tf button{padding:4px 9px;border-radius:6px;font-size:12px;color:var(--mut);flex:none}
+.m5-tf button.on{background:var(--bg3);color:var(--tx)}
+.m5-graf{position:relative;background:#fff}
+.m5-graf svg{display:block;width:100%;height:auto}
+.m5-q{position:absolute;left:8px;top:8px;display:flex;align-items:stretch;border-radius:6px;overflow:hidden;font-size:11px;font-variant-numeric:tabular-nums}
+.m5-q button{padding:5px 8px;text-align:center;line-height:1.15;color:#fff}
+.m5-q .s{background:#b8403f}.m5-q .b{background:#2c6fb7}.m5-q .v{background:#555d66;display:grid;place-items:center;padding:0 8px;color:#fff}
+.m5-q button b{display:block;font-size:10px;font-weight:400;opacity:.85}
+.m5-fab{position:absolute;right:14px;bottom:14px;width:52px;height:52px;border-radius:50%;background:var(--az);display:grid;place-items:center;color:#fff;z-index:2}
+/* pantallas encima */
+.m5-pant{position:absolute;inset:0;background:var(--bg);z-index:6;display:flex;flex-direction:column}
+.m5-pant .m5-cuerpo{padding:0}
+.m5-campo{padding:10px 14px;border-bottom:1px solid var(--ln)}
+.m5-campo label{display:block;font-size:12px;color:var(--mut);margin-bottom:4px}
+.m5-campo input,.m5-campo select{width:100%;background:transparent;border:0;border-bottom:1px solid var(--mut);color:var(--tx);font:inherit;font-size:17px;padding:6px 2px;border-radius:0;outline:0}
+.m5-campo input:focus,.m5-campo select:focus{border-color:var(--az)}
+.m5-campo select option{background:#222}
+.m5-vol{display:flex;align-items:center;gap:8px}
+.m5-vol input{text-align:center}
+.m5-vol button{width:40px;height:40px;border-radius:50%;background:var(--bg3);display:grid;place-items:center;flex:none}
+.m5-ayuda{margin:10px 14px 0;display:flex;gap:8px;flex-wrap:wrap}
+.m5-chip{background:var(--bg3);border-radius:999px;padding:7px 14px;font-size:13px}
+.m5-nota{margin:10px 14px 0;background:var(--bg3);border-radius:10px;padding:10px 12px;font-size:13px}
+.m5-nota.err{border-left:3px solid var(--rj)}
+.m5-bs{display:flex;gap:8px;padding:12px 14px;background:var(--bg2);border-top:1px solid var(--ln);flex:none}
+.m5-bs button{flex:1;min-height:56px;border-radius:8px;color:#fff;font-weight:600;font-size:15px;display:flex;flex-direction:column;align-items:center;justify-content:center;line-height:1.15}
+.m5-bs small{font-size:13px;font-weight:400;font-variant-numeric:tabular-nums}
+.m5-bs .s{background:#b8403f}.m5-bs .b{background:#2c6fb7}.m5-bs .o{background:var(--az)}
+.m5-hoja{position:absolute;inset:0;z-index:8;background:rgba(15,23,42,.4);display:flex;align-items:flex-end}
+.m5-menu{width:100%;background:var(--bg2);border-radius:14px 14px 0 0;padding:6px 0 10px}
+.m5-menu h5{padding:12px 18px 6px;font-size:15px;font-weight:500}
+.m5-menu h5 small{display:block;font-size:12px;color:var(--mut);font-weight:400}
+.m5-menu button{display:block;width:100%;text-align:left;padding:14px 18px;font-size:16px}
+.m5-menu button:active{background:var(--bg3)}
+.m5-conf{padding:18px 14px;display:flex;flex-direction:column;gap:12px}
+.m5-conf .gr{font-size:26px;font-weight:500}
+.m5-conf .btn-cierra{min-height:52px;border-radius:8px;background:var(--az);color:#fff;font-weight:600;font-size:15px}
+/* foco guiado */
+.m5-foco{outline:3px solid #43B649;outline-offset:-3px;animation:m5pulso 1.3s ease-in-out infinite;border-radius:8px}
+.m5-nav .m5-foco{border-radius:0}
+@keyframes m5pulso{50%{outline-color:rgba(67,182,73,.2)}}
+
+.m5-kv.det{padding:12px 14px;border-bottom:1px solid var(--ln);font-size:15px}
